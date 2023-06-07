@@ -1,0 +1,18 @@
+rules:
+  rule/path-item-get-required:
+    subject:
+      type: PathItem
+    message: Every path item must have a GET operation.
+    assertions:
+      required:
+        - get
+
+  assert/path-item-get-rered:
+    subject:
+      type: PathItem
+    message: Every path item must have a GET operation.
+    assertions:
+      required:
+        - get
+
+  operation-4xx-response: warn
